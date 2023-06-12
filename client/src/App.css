@@ -1,22 +1,41 @@
 .App {
   text-align: center;
+  color: rgb(69, 69, 69);
   min-height: 100vh;
-  background-color: lightslategray;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 #page {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  margin-bottom: 20px;
-  min-height: 90vh;
+  margin: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-width: 400px;
+  width: 60%;
 }
 
-a {
-  margin: 5px 20px;
-  color: lightslategray;
-  font-weight: bold
+#phone-list, #phone-details {
+  display: flex;
+  justify-content: center;
+}
+
+#phone-list {
+  width: 25%;
+}
+
+#phone-details {
+  width: 50%;
+}
+
+.spinner {
+  margin-top: 30px;
+}
+
+.error {
+  color: red;
 }
