@@ -18,7 +18,6 @@ router.get("/:phoneId", (req, res, next) => {
     // params converted to numbers because the id from JSON is a number
     return eachPhone.id === Number(req.params.phoneId)
   })
-  console.log(phoneDetails)
   res.json(phoneDetails)
 })
 
